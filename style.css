@@ -4,6 +4,102 @@
     background-size: cover;
 }
 
+.hero-section {
+  position: relative;
+  height: 750px;
+  background: url("./Assest/heroSection.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 30px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  letter-spacing: 2px;
+}
+
+/* Search Box */
+.search-box {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+/* Tabs */
+.search-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.search-tabs button:hover {
+  background: #0d6efd;
+  color: #fff;
+}
+
+.search-tabs button {
+  border: none;
+  padding: 10px 25px;
+  background: #e9ecef;
+  border-radius: 20px;
+  margin: 0 5px;
+  font-weight: 500;
+}
+
+.search-tabs .active {
+  background: #0d6efd;
+  color: #fff;
+}
+
+/* Form */
+.search-form {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.search-form label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+}
+
+.search-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.search-btn {
+  align-self: end;
+  padding: 10px;
+  background: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+
+
 body{
     margin: 0px;
     padding: 0px;
